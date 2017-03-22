@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvModelo"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvllvProprietario"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvProprietario"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvllvModelo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvAno"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_marginStart="1dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvllvProprietario"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/tvllvProprietario"
+        android:layout_marginLeft="1dp" />
+
+</android.support.constraint.ConstraintLayout>
